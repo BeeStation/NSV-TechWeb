@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/vendor/Treant.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/RnD-tree.css">
+    <!-- javascript -->
+    <script src="assets/vendor/Treant.js"></script>
+    <script src="assets/vendor/raphael.js"></script>
+    <script src="assets/vendor/raphael.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/jsrender.min.js"></script>
+    <script src="assets/vendor/lozad.min.js"></script>
+    <script src="assets/js/RnD-tree.js"></script>
+    
+
+
+</head>
+<body>
+  <script id="node-template" type="text/x-jsrender">
+    <div class="icon"></div>
+    <p class="node-name" title="{{:name}}">{{:name}}</p>
+    <p class="node-title">
+      {{if tier < 1}}
+        {{:category}} (Starting)
+      {{else}}
+       {{:category}} (Tier {{:tier}})
+      {{/if}}
+    </p>
+    <p class="node-desc">
+    </p>    
+  </script>
+
+  <div id="tree-simple" style="margin-top:50px">
+    <div id="Techweb">
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{   
+    "name": "Start",
+    "children": [
+        {
+            "area": "base",
+            "tier": 1,
+            "name": "Basic Research Technology",
+            "children": [
+                {
+                    "key": "no idea",
+                    "area": "base",
+                    "category": "",
+                    "name": "Basic Research Technology",
+                    "tier": 0
+                }
+            ]
+        }
+    ]
+}
