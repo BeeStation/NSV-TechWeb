@@ -15,24 +15,34 @@
     <script src="assets/vendor/lozad.min.js"></script>
     <script src="assets/js/RnD-tree.js"></script>
     
-
+    <script id="node-template" type="text/x-jsrender">
+      <p class="node-name" title="{{:name}}">{{:name}}</p>
+      {{if area == "requirement" || key == "required"}}
+      {{else}}
+      <p class="node-title">
+        {{if tier < 0}}
+          {{:category}} (Starting)
+        {{else}}
+         {{:category}} (Tier: {{:tier}})
+        {{/if}}
+      </p>
+      <p class="node-cost">
+        {{if nanite > 0}}
+        Techweb Points Required: {{:cost}}<br>
+        Nanite Points Required: {{:nanite}}
+        {{else}}
+        Techweb Points Required: {{:cost}}
+        {{/if}}
+      </p>
+      <p class="node-desc">
+        {{:desc}}
+      </p>
+      {{/if}}
+    </script>
+  
 
 </head>
 <body>
-  <script id="node-template" type="text/x-jsrender">
-    <div class="icon"></div>
-    <p class="node-name" title="{{:name}}">{{:name}}</p>
-    <p class="node-title">
-      {{if tier < 1}}
-        {{:category}} (Starting)
-      {{else}}
-       {{:category}} (Tier {{:tier}})
-      {{/if}}
-    </p>
-    <p class="node-desc">
-    </p>    
-  </script>
-
   <div id="tree-simple" style="margin-top:50px">
     <div id="Techweb">
 

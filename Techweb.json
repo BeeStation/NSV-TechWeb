@@ -4,14 +4,384 @@
         {
             "area": "base",
             "tier": 1,
-            "name": "Basic Research Technology",
+            "name": "Based",
+            "desc": "based",
             "children": [
                 {
-                    "key": "no idea",
+                    "area": "robotics",
+                    "category": "",
+                    "name": "Cyborg Construction",
+                    "tier": -1,
+                    "desc": "Sapient robots with preloaded tool modules and programmable laws.",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": []
+                },                
+                {
+                    "area": "robotics",
+                    "category": "",
+                    "name": "Man Machine Interface",
+                    "tier": -1,
+                    "desc": "A slightly Frankensteinian device that allows human brains to interface natively with software APIs.",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": []
+                },
+                {
+                    "area": "robotics",
+                    "category": "",
+                    "name": "Mechanical Exosuits",
+                    "tier": -1,
+                    "desc": "NT default research technologies",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": []
+                },
+                {
                     "area": "base",
                     "category": "",
+                    "collapsed": true,
                     "name": "Basic Research Technology",
-                    "tier": 0
+                    "tier": -1,
+                    "desc": "NT default research technologies",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": [
+                        {
+                            "key": "biology",
+                            "area": "biology",
+                            "category": "",
+                            "name": "Biological Technology",
+                            "tier": 1,
+                            "desc": "What makes us tick.",
+                            "add": 0,
+                            "cost": 2500,
+                            "nanite": 0,
+                            "children": [
+                                {
+                                    "area": "biology",
+                                    "category": "",
+                                    "name": "Biological Processing",
+                                    "tier": 1,
+                                    "desc": "From slimes to kitchens",
+                                    "add": 0,
+                                    "cost": 2500,
+                                    "nanite": 0,        
+                                    "children": []
+                                },
+                                {
+                                    "area": "biology",
+                                    "category": "",
+                                    "name": "Advanced Biotechnology",
+                                    "tier": 2,
+                                    "desc": "Advanced Biotechnology",
+                                    "add": 0,
+                                    "cost": 2500,
+                                    "children": [
+                                        {
+                                            "area": "biology",
+                                            "category": "",
+                                            "name": "Improved Wound-Tending Surgery",
+                                            "tier": 2,
+                                            "desc": "Who would have known being more gentle with a hemostat decreases patient pain?",
+                                            "cost": 1000,
+                                            "add": 0,
+                                            "children": [
+                                                {
+                                                    "area": "biology",
+                                                    "category": "",
+                                                    "name": "Advanced Surgery",
+                                                    "tier": 3,
+                                                    "desc": "When simple medicine doesn't cut it.",
+                                                    "cost": 2500,
+                                                    "add": 0,
+                                                    "children": [
+                                                        {
+                                                            "area": "biology",
+                                                            "category": "",
+                                                            "name": "Experimental Surgery",
+                                                            "tier": 4,
+                                                            "desc": "When evolution isn't fast enough",
+                                                            "cost": 5000,
+                                                            "add": 0,
+                                                            "children": [
+                                                                {
+                                                                    "area": "biology-alien",
+                                                                    "category": "",
+                                                                    "name": "Alien Surgery",
+                                                                    "tier": 5,
+                                                                    "desc": "Abductors did nothing wrong.",
+                                                                    "add": 0,
+                                                                    "cost": 10000,
+                                                                    "children": [
+                                                                        {
+                                                                            "area": "requirement",
+                                                                            "name": "Tech Requires",
+                                                                            "tier": 0,
+                                                                            "desc": "",
+                                                                            "add": 0,
+                                                                            "children": [
+                                                                                {
+                                                                                    "area": "alien",
+                                                                                    "category": "",
+                                                                                    "name": "Alien Technology",
+                                                                                    "key": "required",
+                                                                                    "tier": 5,
+                                                                                    "desc": "Things used by the greys.",
+                                                                                    "add": 0,
+                                                                                    "cost": 5000,
+                                                                                    "nanite": 0
+                                                                                }                                                                
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }                                                
+                                                            ]
+                                                        }                                
+        
+                                                    ]
+                                                }                                
+                                            ]
+                                        }                        
+                                    ]
+                                }                                                                   
+                            ]
+                        },
+                        {
+                            "area": "electronic",
+                            "category": "",
+                            "name": "Data Theory",
+                            "tier": 1,
+                            "desc": "Big Data, in space!",
+                            "add": 0,
+                            "cost": 2500,
+                            "nanite": 0,
+                            "children": []
+                        },
+                        {
+                            "area": "engineering",
+                            "category": "",
+                            "name": "Industrial Engineering",
+                            "tier": 1,
+                            "desc": "A refresher course on modern engineering technology.",
+                            "add": 0,
+                            "cost": 7500,
+                            "nanite": 0,
+                            "children": [
+                                {
+                                    "area": "engineering",
+                                    "category": "",
+                                    "name": "Advanced Power Manipulation",
+                                    "tier": 3,
+                                    "desc": "How to get more zap.",
+                                    "cost": 2500,
+                                    "nanite": 0,
+                                    "add": 0,
+                                    "children": []
+                                },
+                                {
+                                    "area": "engineering-data",
+                                    "name": "High Efficiency Parts",
+                                    "desc": "Finely-tooled manufacturing techniques allowing for picometer-perfect precision levels.",
+                                    "tier": 3,
+                                    "cost": 7500,
+                                    "children": [
+                                        {
+                                            "area": "requirement",
+                                            "name": "Tech Requires",
+                                            "tier": 0,
+                                            "desc": "",
+                                            "add": 0,
+                                            "children": [
+                                                {
+                                                    "area": "electronic",
+                                                    "key": "required",
+                                                    "name": "Data Theory"
+                                                }
+                                            ]
+                                        }   
+                                    ]
+                                },
+                                {              
+
+                                    "area": "engineering",
+                                    "name": "Advanced Engineering",
+                                    "tier": 2,
+                                    "desc": "Pushing the boundaries of physics, one chainsaw-fist at a time.",
+                                    "add": 0,
+                                    "cost": 2500,
+                                    "children": [
+                                        {
+                                            "area": "requirement",
+                                            "name": "Tech Requires",
+                                            "tier": 0,
+                                            "desc": "",
+                                            "add": 0,
+                                            "children": [
+                                                {
+                                                    "area": "engineering",
+                                                    "key": "required",
+                                                    "name": "Electromagnetic Theory",
+                                                    "tier": 2,
+                                                    "add": 0,
+                                                    "desc": "Study into usage of frequencies in the electromagnetic spectrum.",
+                                                    "cost": 2500
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "area": "electromagnetic",
+                            "name": "Electromagnetic Theory",
+                            "tier": 2,
+                            "desc": "Study into usage of frequencies in the electromagnetic spectrum.",
+                            "cost": 2500,
+                            "add": 0,
+                            "children": [
+                                {
+                                    "area": "electromagnetic",
+                                    "name": "Advanced Electromagnetic Theory",
+                                    "tier": 3,
+                                    "desc": "Determining whether reversing the polarity will actually help in a given situation.",
+                                    "cost": 3000,
+                                    "children": [
+                                        {
+                                            "area": "electromagnetic",
+                                            "name": "Quantum Electromagnetic Technology",
+                                            "tier": 4,
+                                            "cost": 3000,
+                                            "desc": "Quantum Electromagnetic Technology",
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "area": "bluespace",
+                            "name": "Basic Bluespace Theory",
+                            "tier": 4,
+                            "cost": 2500,
+                            "desc": "Basic studies into the mysterious alternate dimension known as bluespace.",
+                            "add": 0,
+                            "children": [
+                                {
+                                    "area": "bluespace-engineering",
+                                    "name": "Applied Bluespace Research",
+                                    "tier": 4,
+                                    "cost": 5000,
+                                    "desc": "Using bluespace to make things faster and better.",
+                                    "children": [
+                                        {
+                                            "area": "requirement",
+                                            "name": "Tech Requires",
+                                            "tier": 0,
+                                            "desc": "",
+                                            "add": 0,
+                                            "children": [
+                                                {
+                                                    "area": "engineering",
+                                                    "key": "required",
+                                                    "name": "Advanced Engineering",
+                                                    "tier": 2,
+                                                    "desc": "Pushing the boundaries of physics, one chainsaw-fist at a time.",
+                                                    "add": 0,
+                                                    "cost": 2500                
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "area": "bluespace",
+                                            "name": "Bluespace Travel",
+                                            "desc": "Application of Bluespace for static teleportation technology.",
+                                            "cost": 5000,
+                                            "tier": 5,
+                                            "children": []
+                                        },
+                                        {
+                                            "area": "bluespace",
+                                            "name": "Bluespace Power Technology",
+                                            "desc": "Even more powerful.. power!",
+                                            "cost": 2500,
+                                            "tier": 4,
+                                            "children": [
+                                                {
+                                                    "area": "requirement",
+                                                    "name": "Tech Requires",
+                                                    "children": [
+                                                        {
+                                                            "area": "engineering",
+                                                            "key": "required",
+                                                            "name": "Advanced Power Manipulation"
+                                                        }
+                                                    ]        
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "area": "robotics",
+                            "category": "",
+                            "name": "Basic Robotics Research",
+                            "tier": 2,
+                            "desc": "Programmable machines that make our lives lazier.",
+                            "add": 0,
+                            "children": [
+                                {
+                                    "area": "robotics",
+                                    "category": "",
+                                    "name": "Advanced Robotics Research",
+                                    "tier": 3,
+                                    "desc": "It can even do the dishes!",
+                                    "add": 0,
+                                    "children": []
+                                }
+                            ]
+                        }     
+                    ]
+                },
+                {
+                    "area": "robotics",
+                    "category": "",
+                    "name": "Basic Exosuit Equipment",
+                    "tier": -1,
+                    "desc": "Various tools fit for basic mech units",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": []
+                },
+                {
+                    "area": "engineering",
+                    "category": "",
+                    "name": "Basic Tools",
+                    "tier": -1,
+                    "desc": "Basic mechanical, electronic, surgical and botanical tools.",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": []
+                },
+                {
+                    "area": "electronic",
+                    "category": "",
+                    "name": "Basic Integrated Circuits",
+                    "tier": -1,
+                    "desc": "Research on how to fully exploit the power of integrated circuits",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": []
                 }
             ]
         }
