@@ -832,8 +832,8 @@
          * @returns {Tree}
          */
         handleOverflow: function( treeWidth, treeHeight ) {
-            var viewWidth = (treeWidth < this.drawArea.clientWidth) ? this.drawArea.clientWidth : treeWidth + this.CONFIG.padding*2,
-                viewHeight = (treeHeight < this.drawArea.clientHeight) ? this.drawArea.clientHeight : treeHeight + this.CONFIG.padding*2;
+            var viewWidth = treeWidth + this.CONFIG.padding*2,
+                viewHeight = treeHeight + this.CONFIG.padding*2;
 
             this._R.setSize( viewWidth, viewHeight );
 
