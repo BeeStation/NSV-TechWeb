@@ -2,18 +2,26 @@
 
 var configWeb = {
     container: '#Techweb',
-    rootOrientation: 'NORTH',
+    rootOrientation: 'WEST',
     nodeAlign: 'TOP',
     hideRootNode: true,
-    siblingSeparation: 20,
-    subTeeSeparation: 20,
+    siblingSeparation: 50,
+    subTeeSeparation: 50,
     scrollbar: 'resize',
     connectors: {
-      type: 'step'
+      type: 'step',
+      style: {
+          "stroke-width": 2.5
+      }
     },
     node: {
         HTMLclass: 'web',
-        collapsable: false
+        collapsable: true
+    },
+    animation: {
+        nodeAnimation: "easeOutBounce",
+        nodeSpeed: 700,
+        connectorsSpeed: 700,
     },
     callback: {
         onTreeLoaded: function() {
@@ -45,7 +53,7 @@ function _load(jsonData) {
     var myconfig = {container: container};
     $.extend(true, myconfig, configWeb);
 
-   new Treant({chart:myconfig, nodeStructure: jsonData.children[0]});
+   new Treant({chart:myconfig, nodeStructure: jsonData.children[0], $});
 }
 
 function load_tree() {
