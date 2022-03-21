@@ -41,6 +41,7 @@ body {
   padding: 2px;
   padding-top: 0px;
   padding-left: 0px;
+  padding-right: 0px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -144,6 +145,10 @@ p.node-name {
   background: linear-gradient(90deg, green 50%, purple 50%);
 }
 
+.web.biology-data p.node-name {
+  background: linear-gradient(90deg, green 50%, grey 50%)
+}
+
 .web.engineering p.node-name {
   background-color: goldenrod;
 }
@@ -158,6 +163,10 @@ p.node-name {
 
 .web.alien p.node-name {
   background-color: purple;
+}
+
+.web.plasma p.node-name {
+  background: linear-gradient(90deg,goldenrod 50%, #c85bb6 50%);
 }
 
 .web.electronic p.node-name {
