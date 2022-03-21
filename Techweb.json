@@ -160,7 +160,31 @@
                             "add": 0,
                             "cost": 2500,
                             "nanite": 0,
-                            "children": []
+                            "children": [
+                                {
+                                    "area": "biology-data",
+                                    "name": "Neural Programming",
+                                    "desc": "Study into networks of processing units that mimic our brains.",
+                                    "tier": 2,
+                                    "cost": 2500,
+                                    "children": [
+                                        {
+                                            "area": "requirement",
+                                            "name": "Tech Requires",
+                                            "tier": 0,
+                                            "desc": "",
+                                            "add": 0,
+                                            "children": [
+                                                {
+                                                    "area": "biology",
+                                                    "key": "required",
+                                                    "name": "Biological Technology"
+                                                }
+                                            ]
+                                        }   
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "area": "engineering",
@@ -232,6 +256,23 @@
                                                     "cost": 2500
                                                 }
                                             ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "area": "plasma",
+                                    "name": "Basic Plasma Research",
+                                    "desc": "Research into the mysterious and dangerous substance, plasma.",
+                                    "tier": 1,
+                                    "cost": 2500,
+                                    "children": [
+                                        {
+                                            "area": "plasma",
+                                            "name": "Advanced Plasma Research",
+                                            "desc": "Research on how to fully exploit the power of plasma.",
+                                            "tier": 2,
+                                            "cost": 2500,
+                                            "children": []
                                         }
                                     ]
                                 }
@@ -335,7 +376,7 @@
                             "name": "Basic Robotics Research",
                             "tier": 2,
                             "desc": "Programmable machines that make our lives lazier.",
-                            "add": 0,
+                            "cost": 2500,
                             "children": [
                                 {
                                     "area": "robotics",
@@ -343,7 +384,7 @@
                                     "name": "Advanced Robotics Research",
                                     "tier": 3,
                                     "desc": "It can even do the dishes!",
-                                    "add": 0,
+                                    "cost": 2500,
                                     "children": []
                                 }
                             ]
