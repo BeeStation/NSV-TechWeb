@@ -164,7 +164,6 @@ p.node-name {
 .web.alien p.node-name {
   background-color: purple;
 }
-
 .web.plasma p.node-name {
   background: linear-gradient(90deg,goldenrod 50%, #c85bb6 50%);
 }
@@ -187,6 +186,11 @@ p.node-name {
 
 .web li.addonlist {
   background-color: purple;
+}
+
+.web p[selected="selected"] {
+  background-color: blueviolet !important;
+  
 }
 
 /* I don't know */

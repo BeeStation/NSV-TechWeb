@@ -43,7 +43,6 @@
                 {
                     "area": "base",
                     "category": "",
-                    "collapsed": true,
                     "name": "Basic Research Technology",
                     "tier": -1,
                     "desc": "NT default research technologies",
@@ -115,6 +114,10 @@
                                                                     "name": "Alien Surgery",
                                                                     "tier": 5,
                                                                     "desc": "Abductors did nothing wrong.",
+                                                                    "requirement": [
+                                                                            "Alien Technology",
+                                                                            "Experimental Surgery"
+                                                                    ],
                                                                     "add": 0,
                                                                     "cost": 10000,
                                                                     "children": [
@@ -129,7 +132,7 @@
                                                                                     "area": "alien",
                                                                                     "category": "",
                                                                                     "name": "Alien Technology",
-                                                                                    "key": "required",
+                                                                                    "key": "Alien_Technology",
                                                                                     "tier": 5,
                                                                                     "desc": "Things used by the greys.",
                                                                                     "add": 0,
@@ -166,6 +169,10 @@
                                     "name": "Neural Programming",
                                     "desc": "Study into networks of processing units that mimic our brains.",
                                     "tier": 2,
+                                    "requirement": [
+                                        "Biological Technology",
+                                        "Data Theory"
+                                    ],
                                     "cost": 2500,
                                     "children": [
                                         {
