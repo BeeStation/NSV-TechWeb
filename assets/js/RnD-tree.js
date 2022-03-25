@@ -66,11 +66,12 @@ function load_tree() {
 
 
 function reqFetch(string) {
+    var cow = string;
     //Grabs the json file and throws the resulting data into a local variable
     $.getJSON('Techweb.json',function(jsonData) {
         //Variable is sent to a filter function that sorts through it.
         //Finding any entry that requires multiple parents...sort of
-        mental(jsonData, string);
+        mental(jsonData, cow);
     });
 }
 
@@ -107,23 +108,27 @@ function chaos(Slapper, free) {
     $(free).each(function(i, node){
         let fock = $(node).children();
         $(fock).each(function(i, nodetwo){
-                for (let x = 0; x < Slapper.length; x++) {
-                    var element = Slapper[x];
-                    if ($(nodetwo).attr("title")==element) {
-                        if ($(nodetwo).attr("selected")=="selected") {
-                            $(nodetwo).removeAttr("selected");
-                        } else {
-                            $(nodetwo).attr("selected", "highlight");
-                        }        
-                    }
+            if ($(nodetwo).attr("selected")=="selected") {
+                $(nodetwo).removeAttr("selected");
+            }
+            for (let x = 0; x < Slapper.length; x++) {
+                var element = Slapper[x];
+                if ($(nodetwo).attr("title")==element) {
+                    if ($(nodetwo).attr("selected")=="selected") {
+                        $(nodetwo).removeAttr("selected");
+                    } else {
+                        $(nodetwo).attr("selected", "highlight");
+                        return;
+                    }        
                 }
+            }
         });
     });
 }
 
 function mental(jsonData, string) {
     $(jsonData.children).each(function(i, node){
-        if (!(node.requirement === undefined)) {
+        if (typeof node.requirement !== "undefined" && node.requirement !== null && node.name === string) {
             var Slapper = node.requirement;
             var Blocker = node.name;
             if (string == Blocker) {

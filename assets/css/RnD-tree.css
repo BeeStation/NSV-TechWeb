@@ -189,8 +189,7 @@ p.node-name {
 }
 
 .web p[selected="selected"] {
-  background-color: blueviolet !important;
-  
+  background: blueviolet !important;
 }
 
 /* I don't know */

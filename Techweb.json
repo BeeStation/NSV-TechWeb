@@ -174,22 +174,7 @@
                                         "Data Theory"
                                     ],
                                     "cost": 2500,
-                                    "children": [
-                                        {
-                                            "area": "requirement",
-                                            "name": "Tech Requires",
-                                            "tier": 0,
-                                            "desc": "",
-                                            "add": 0,
-                                            "children": [
-                                                {
-                                                    "area": "biology",
-                                                    "key": "required",
-                                                    "name": "Biological Technology"
-                                                }
-                                            ]
-                                        }   
-                                    ]
+                                    "children": []
                                 }
                             ]
                         },
@@ -220,22 +205,10 @@
                                     "desc": "Finely-tooled manufacturing techniques allowing for picometer-perfect precision levels.",
                                     "tier": 3,
                                     "cost": 7500,
-                                    "children": [
-                                        {
-                                            "area": "requirement",
-                                            "name": "Tech Requires",
-                                            "tier": 0,
-                                            "desc": "",
-                                            "add": 0,
-                                            "children": [
-                                                {
-                                                    "area": "electronic",
-                                                    "key": "required",
-                                                    "name": "Data Theory"
-                                                }
-                                            ]
-                                        }   
-                                    ]
+                                    "requirement":[
+                                        "Data Theory"
+                                    ],
+                                    "children": []
                                 },
                                 {              
 
@@ -244,33 +217,20 @@
                                     "tier": 2,
                                     "desc": "Pushing the boundaries of physics, one chainsaw-fist at a time.",
                                     "add": 0,
+                                    "requirement": [
+                                        "Electromagnetic Theory"
+                                    ],
                                     "cost": 2500,
-                                    "children": [
-                                        {
-                                            "area": "requirement",
-                                            "name": "Tech Requires",
-                                            "tier": 0,
-                                            "desc": "",
-                                            "add": 0,
-                                            "children": [
-                                                {
-                                                    "area": "engineering",
-                                                    "key": "required",
-                                                    "name": "Electromagnetic Theory",
-                                                    "tier": 2,
-                                                    "add": 0,
-                                                    "desc": "Study into usage of frequencies in the electromagnetic spectrum.",
-                                                    "cost": 2500
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "children": []
                                 },
                                 {
                                     "area": "plasma",
                                     "name": "Basic Plasma Research",
                                     "desc": "Research into the mysterious and dangerous substance, plasma.",
                                     "tier": 1,
+                                    "requirement":[
+                                        "Industrial Engineering"
+                                    ],
                                     "cost": 2500,
                                     "children": [
                                         {
@@ -278,6 +238,9 @@
                                             "name": "Advanced Plasma Research",
                                             "desc": "Research on how to fully exploit the power of plasma.",
                                             "tier": 2,
+                                            "requirement":[
+                                                "Basic Plasma Research"
+                                            ],
                                             "cost": 2500,
                                             "children": []
                                         }
@@ -298,12 +261,18 @@
                                     "name": "Advanced Electromagnetic Theory",
                                     "tier": 3,
                                     "desc": "Determining whether reversing the polarity will actually help in a given situation.",
+                                    "requirement":[
+                                        "Electromagnetic Theory"
+                                    ],
                                     "cost": 3000,
                                     "children": [
                                         {
                                             "area": "electromagnetic",
                                             "name": "Quantum Electromagnetic Technology",
                                             "tier": 4,
+                                            "requirement":[
+                                                "Advanced Electromagnetic Theory"
+                                            ],
                                             "cost": 3000,
                                             "desc": "Quantum Electromagnetic Technology",
                                             "children": []
@@ -317,6 +286,9 @@
                             "name": "Basic Bluespace Theory",
                             "tier": 4,
                             "cost": 2500,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
                             "desc": "Basic studies into the mysterious alternate dimension known as bluespace.",
                             "add": 0,
                             "children": [
@@ -325,32 +297,21 @@
                                     "name": "Applied Bluespace Research",
                                     "tier": 4,
                                     "cost": 5000,
+                                    "requirement":[
+                                        "Basic Bluespace Theory",
+                                        "Advanced Engineering"
+                                    ],
                                     "desc": "Using bluespace to make things faster and better.",
                                     "children": [
-                                        {
-                                            "area": "requirement",
-                                            "name": "Tech Requires",
-                                            "tier": 0,
-                                            "desc": "",
-                                            "add": 0,
-                                            "children": [
-                                                {
-                                                    "area": "engineering",
-                                                    "key": "required",
-                                                    "name": "Advanced Engineering",
-                                                    "tier": 2,
-                                                    "desc": "Pushing the boundaries of physics, one chainsaw-fist at a time.",
-                                                    "add": 0,
-                                                    "cost": 2500                
-                                                }
-                                            ]
-                                        },
                                         {
                                             "area": "bluespace",
                                             "name": "Bluespace Travel",
                                             "desc": "Application of Bluespace for static teleportation technology.",
                                             "cost": 5000,
                                             "tier": 5,
+                                            "requirement":[
+                                                "Applied Bluespace Research"
+                                            ],
                                             "children": []
                                         },
                                         {
@@ -359,19 +320,11 @@
                                             "desc": "Even more powerful.. power!",
                                             "cost": 2500,
                                             "tier": 4,
-                                            "children": [
-                                                {
-                                                    "area": "requirement",
-                                                    "name": "Tech Requires",
-                                                    "children": [
-                                                        {
-                                                            "area": "engineering",
-                                                            "key": "required",
-                                                            "name": "Advanced Power Manipulation"
-                                                        }
-                                                    ]        
-                                                }
-                                            ]
+                                            "requirement":[
+                                                "Applied Bluespace Research",
+                                                "Advanced Power Manipulation"
+                                            ],
+                                            "children": []
                                         }
                                     ]
                                 }
@@ -383,12 +336,18 @@
                             "name": "Basic Robotics Research",
                             "tier": 2,
                             "desc": "Programmable machines that make our lives lazier.",
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
                             "cost": 2500,
                             "children": [
                                 {
                                     "area": "robotics",
                                     "category": "",
                                     "name": "Advanced Robotics Research",
+                                    "requirement":[
+                                        "Basic Robotics Research"
+                                    ],
                                     "tier": 3,
                                     "desc": "It can even do the dishes!",
                                     "cost": 2500,
