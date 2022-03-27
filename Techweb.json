@@ -79,6 +79,9 @@
                                     "tier": 2,
                                     "desc": "Advanced Biotechnology",
                                     "add": 0,
+                                    "requirement":[
+                                        "Biological Technology"
+                                    ],
                                     "cost": 2500,
                                     "children": [
                                         {
@@ -89,6 +92,9 @@
                                             "desc": "Who would have known being more gentle with a hemostat decreases patient pain?",
                                             "cost": 1000,
                                             "add": 0,
+                                            "requirement":[
+                                                "Advanced Biotechnology"
+                                            ],
                                             "children": [
                                                 {
                                                     "area": "biology",
@@ -98,12 +104,18 @@
                                                     "desc": "When simple medicine doesn't cut it.",
                                                     "cost": 2500,
                                                     "add": 0,
+                                                    "requirement":[
+                                                        "Improved Wound-Tending Surgery"
+                                                    ],
                                                     "children": [
                                                         {
                                                             "area": "biology",
                                                             "category": "",
                                                             "name": "Experimental Surgery",
                                                             "tier": 4,
+                                                            "requirement":[
+                                                                "Advanced Surgery"
+                                                            ],
                                                             "desc": "When evolution isn't fast enough",
                                                             "cost": 5000,
                                                             "add": 0,
@@ -194,6 +206,9 @@
                                     "name": "Advanced Power Manipulation",
                                     "tier": 3,
                                     "desc": "How to get more zap.",
+                                    "requirement":[
+                                        "Industrial Engineering"
+                                    ],
                                     "cost": 2500,
                                     "nanite": 0,
                                     "add": 0,
@@ -206,7 +221,8 @@
                                     "tier": 3,
                                     "cost": 7500,
                                     "requirement":[
-                                        "Data Theory"
+                                        "Data Theory",
+                                        "Industrial Engineering"
                                     ],
                                     "children": []
                                 },
@@ -218,7 +234,8 @@
                                     "desc": "Pushing the boundaries of physics, one chainsaw-fist at a time.",
                                     "add": 0,
                                     "requirement": [
-                                        "Electromagnetic Theory"
+                                        "Electromagnetic Theory",
+                                        "Industrial Engineering"
                                     ],
                                     "cost": 2500,
                                     "children": []

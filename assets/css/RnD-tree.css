@@ -188,8 +188,8 @@ p.node-name {
   background-color: purple;
 }
 
-.web p[selected="selected"] {
-  background: blueviolet !important;
+div[selected="selected"] {
+  background: #25466b;
 }
 
 /* I don't know */

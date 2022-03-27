@@ -106,22 +106,23 @@ function Hell(Slapper) {
 
 function chaos(Slapper, free) {
     $(free).each(function(i, node){
+        if ($(node).attr("selected") == "selected") {
+            $(node).removeAttr("selected");
+        }
         let fock = $(node).children();
         $(fock).each(function(i, nodetwo){
-            if ($(nodetwo).attr("selected")=="selected") {
+            if ($(nodetwo).attr("selected") == "selected") {
                 $(nodetwo).removeAttr("selected");
             }
-            for (let x = 0; x < Slapper.length; x++) {
-                var element = Slapper[x];
-                if ($(nodetwo).attr("title")==element) {
-                    if ($(nodetwo).attr("selected")=="selected") {
-                        $(nodetwo).removeAttr("selected");
-                    } else {
-                        $(nodetwo).attr("selected", "highlight");
-                        return;
-                    }        
+                for (let x of Slapper) {
+                    if ($(nodetwo).attr("title") == x) {
+                        if ($(nodetwo).attr("selected") !== "selected") {
+                            var chotic = nodetwo.parentElement;
+                            console.log(chotic);
+                           $(chotic).attr("selected", "selected");
+                        } 
+                    }
                 }
-            }
         });
     });
 }
