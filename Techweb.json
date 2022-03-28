@@ -8,6 +8,78 @@
             "desc": "based",
             "children": [
                 {
+                    "area": "electronic",
+                    "category": "",
+                    "name": "Basic Integrated Circuits",
+                    "tier": -1,
+                    "desc": "Research on how to fully exploit the power of integrated circuits",
+                    "add": 0,
+                    "cost": 0,
+                    "nanite": 0,
+                    "children": [
+                        {
+                            "area": "electronic",
+                            "name": "Math Circuitry",
+                            "desc": "Development of more complex mathematical components for all your number manipulating needs",
+                            "cost": 1000,
+                            "tier": 1,
+                            "requirement":[
+                                "Basic Integrated Circuits",
+                                "Data Theory"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "engineering-data",
+                            "name": "Advanced Shell Research",
+                            "desc": "Grants access to more complicated shell designs.",
+                            "cost": 2500,
+                            "tier": 2,
+                            "requirement":[
+                                "Basic Integrated Circuits",
+                                "Industrial Engineering"
+                            ],
+                            "children":[
+                                {
+                                    "area": "robotics",
+                                    "name": "Movable Shell Research",
+                                    "desc": "Grants access to movable shells.",
+                                    "cost": 3000,
+                                    "tier": 2,
+                                    "requirement":[
+                                        "Advanced Shell Research",
+                                        "Basic Robotics Research"
+                                    ],
+                                    "children":[]
+                                },
+                                {
+                                    "area": "electronic",
+                                    "name": "Server Technology Research",
+                                    "desc": "Grants access to a server shell that has a very high capacity for components.",
+                                    "cost": 3000,
+                                    "tier": 2,
+                                    "requirement":[
+                                        "Advanced Shell Research"
+                                    ],
+                                    "children":[]
+                                }
+                            ]
+                        },
+                        {
+                            "area": "electronic",
+                            "name": "List Circuitry",
+                            "desc": "Configures new integrated circuit components capable of representing one dimensional data structures such as arrays, stacks, and queues.",
+                            "cost": 1000,
+                            "tier": 1,
+                            "requirement":[
+                                "Basic Integrated Circuits",
+                                "Data Theory"
+                            ],
+                            "children":[]
+                        }
+                    ]
+                },
+                {
                     "area": "robotics",
                     "category": "",
                     "name": "Cyborg Construction",
@@ -58,6 +130,9 @@
                             "tier": 1,
                             "desc": "What makes us tick.",
                             "add": 0,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
                             "cost": 2500,
                             "nanite": 0,
                             "children": [
@@ -68,6 +143,9 @@
                                     "tier": 1,
                                     "desc": "From slimes to kitchens",
                                     "add": 0,
+                                    "requirement":[
+                                        "Biological Technology"
+                                    ],
                                     "cost": 2500,
                                     "nanite": 0,        
                                     "children": []
@@ -132,28 +210,7 @@
                                                                     ],
                                                                     "add": 0,
                                                                     "cost": 10000,
-                                                                    "children": [
-                                                                        {
-                                                                            "area": "requirement",
-                                                                            "name": "Tech Requires",
-                                                                            "tier": 0,
-                                                                            "desc": "",
-                                                                            "add": 0,
-                                                                            "children": [
-                                                                                {
-                                                                                    "area": "alien",
-                                                                                    "category": "",
-                                                                                    "name": "Alien Technology",
-                                                                                    "key": "Alien_Technology",
-                                                                                    "tier": 5,
-                                                                                    "desc": "Things used by the greys.",
-                                                                                    "add": 0,
-                                                                                    "cost": 5000,
-                                                                                    "nanite": 0
-                                                                                }                                                                
-                                                                            ]
-                                                                        }
-                                                                    ]
+                                                                    "children": []
                                                                 }                                                
                                                             ]
                                                         }                                
@@ -173,6 +230,9 @@
                             "tier": 1,
                             "desc": "Big Data, in space!",
                             "add": 0,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
                             "cost": 2500,
                             "nanite": 0,
                             "children": [
@@ -186,7 +246,19 @@
                                         "Data Theory"
                                     ],
                                     "cost": 2500,
-                                    "children": []
+                                    "children": [
+                                        {
+                                            "area": "biology-data",
+                                            "name": "Positronic Brain",
+                                            "desc": "Applied usage of neural technology allowing for autonomous AI units based on special metallic cubes with conductive and processing circuits.",
+                                            "cost": 2500,
+                                            "tier": "?",
+                                            "requirement":[
+                                                "Neural Programming"
+                                            ],
+                                            "children":[]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -197,6 +269,9 @@
                             "tier": 1,
                             "desc": "A refresher course on modern engineering technology.",
                             "add": 0,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
                             "cost": 7500,
                             "nanite": 0,
                             "children": [
@@ -210,8 +285,6 @@
                                         "Industrial Engineering"
                                     ],
                                     "cost": 2500,
-                                    "nanite": 0,
-                                    "add": 0,
                                     "children": []
                                 },
                                 {
@@ -225,6 +298,21 @@
                                         "Industrial Engineering"
                                     ],
                                     "children": []
+                                },
+                                {
+                                    "area": "alien",
+                                    "category": "",
+                                    "name": "Alien Technology",
+                                    "key": "Alien_Technology",
+                                    "tier": 5,
+                                    "desc": "Things used by the greys.",
+                                    "add": 0,
+                                    "requirement":[
+                                        "Biological Technology",
+                                        "Industrial Engineering"
+                                    ],
+                                    "cost": 5000,
+                                    "nanite": 0
                                 },
                                 {              
 
@@ -271,6 +359,9 @@
                             "tier": 2,
                             "desc": "Study into usage of frequencies in the electromagnetic spectrum.",
                             "cost": 2500,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
                             "add": 0,
                             "children": [
                                 {
@@ -307,7 +398,6 @@
                                 "Basic Research Technology"
                             ],
                             "desc": "Basic studies into the mysterious alternate dimension known as bluespace.",
-                            "add": 0,
                             "children": [
                                 {
                                     "area": "bluespace-engineering",
@@ -316,7 +406,7 @@
                                     "cost": 5000,
                                     "requirement":[
                                         "Basic Bluespace Theory",
-                                        "Advanced Engineering"
+                                        "Industrial Engineering"
                                     ],
                                     "desc": "Using bluespace to make things faster and better.",
                                     "children": [
@@ -329,7 +419,92 @@
                                             "requirement":[
                                                 "Applied Bluespace Research"
                                             ],
-                                            "children": []
+                                            "children": [
+                                                {
+                                                    "area": "bluespace-engineering",
+                                                    "name": "Basic Shuttle Research",
+                                                    "desc": "Research the technology required to create and use basic shuttles.",
+                                                    "cost": 10000,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Bluespace Travel",
+                                                        "Advanced Engineering"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "alien",
+                                                            "name": "Nullspace Breaching",
+                                                            "desc": "Research into voidspace tunnelling, allowing us to significantly reduce flight times.",
+                                                            "cost": 12500,
+                                                            "tier": "?",
+                                                            "requirement":[
+                                                                "Basic Shuttle Research",
+                                                                "Alien Technology"
+                                                            ],
+                                                            "children":[]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "area": "bluespace-engineering",
+                                            "name": "Anomaly Research",
+                                            "desc": "Unlock the potential of the mysterious anomalies that appear on station.",
+                                            "cost": 5000,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Applied Bluespace Research",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "bluespace-engineering",
+                                            "name": "Miniaturized Bluespace Research",
+                                            "desc": "Extreme reduction in space required for bluespace engines, leading to portable bluespace technology.",
+                                            "cost": 10000,
+                                            "tier": 5,
+                                            "requirement":[
+                                                "Bluespace Travel",
+                                                "Applied Bluespace Research",
+                                                "High Efficiency Parts"
+                                            ],
+                                            "children": [
+                                                {
+                                                    "area": "bluespace",
+                                                    "name": "Bag of Holding",
+                                                    "desc": "Portable bluespace technology allows the production of backpacks that can store a greater volume of items than the volume of the bag.",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Miniaturized Bluespace Research"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "bluespace",
+                                                    "name": "Bluespace Wormhole Projector",
+                                                    "desc": "Develop the research required to create a miniaturized bluespace wormhole projector, allowing you to jump between two places instantly.",
+                                                    "cost": 5000,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Miniaturized Bluespace Research"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "bluespace",
+                                                    "name": "Quantum Spin Inverter",
+                                                    "desc": "Research the ability to create an experimental device that is able to swap the locations of two entities by switching their particles' spin values. Must be linked to another device to function.",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Miniaturized Bluespace Research"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]                                                    
                                         },
                                         {
                                             "area": "bluespace",
@@ -349,7 +524,6 @@
                         },
                         {
                             "area": "robotics",
-                            "category": "",
                             "name": "Basic Robotics Research",
                             "tier": 2,
                             "desc": "Programmable machines that make our lives lazier.",
@@ -360,7 +534,6 @@
                             "children": [
                                 {
                                     "area": "robotics",
-                                    "category": "",
                                     "name": "Advanced Robotics Research",
                                     "requirement":[
                                         "Basic Robotics Research"
@@ -391,17 +564,6 @@
                     "name": "Basic Tools",
                     "tier": -1,
                     "desc": "Basic mechanical, electronic, surgical and botanical tools.",
-                    "add": 0,
-                    "cost": 0,
-                    "nanite": 0,
-                    "children": []
-                },
-                {
-                    "area": "electronic",
-                    "category": "",
-                    "name": "Basic Integrated Circuits",
-                    "tier": -1,
-                    "desc": "Research on how to fully exploit the power of integrated circuits",
                     "add": 0,
                     "cost": 0,
                     "nanite": 0,
