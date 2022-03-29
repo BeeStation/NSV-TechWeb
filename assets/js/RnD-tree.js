@@ -5,8 +5,8 @@ var configWeb = {
     rootOrientation: 'WEST',
     nodeAlign: 'TOP',
     hideRootNode: true,
-    siblingSeparation: 50,
-    subTeeSeparation: 50,
+    siblingSeparation: 20,
+    subTeeSeparation: 20,
     scrollbar: 'resize',
     connectors: {
       type: 'step',

@@ -59,7 +59,8 @@
                                     "cost": 3000,
                                     "tier": 2,
                                     "requirement":[
-                                        "Advanced Shell Research"
+                                        "Advanced Shell Research",
+                                        "Computer Hardware"
                                     ],
                                     "children":[]
                                 }
@@ -164,6 +165,81 @@
                                     "children": [
                                         {
                                             "area": "biology",
+                                            "name": "Cybernetic Organs",
+                                            "desc": "We have the technology to rebuild him.",
+                                            "cost": 1000,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Advanced Biotechnology"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "biology",
+                                                    "name": "Upgraded Cybernetic Organs",
+                                                    "desc": "We have the technology to upgrade him.",
+                                                    "cost": 1500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Cybernetic Organs"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "biology",
+                                                    "name": "IPC Parts",
+                                                    "desc": "We have the technology to replace him.",
+                                                    "cost": 1500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Cybernetic Organs",
+                                                        "Basic Robotics Research"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "area": "Cybernetics",
+                                            "name": "Cybernetic Implants",
+                                            "desc": "Electronic implants that improve humans.",
+                                            "cost": 2500,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Advanced Biotechnology",
+                                                "Data Theory"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "Cybernetics",
+                                                    "name": "Advanced Cybernetic Implants",
+                                                    "desc": "Upgraded and more powerful cybernetic implants.",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Neural Programming",
+                                                        "Cybernetic Implants",
+                                                        "Integrated HUDs"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "Cybernetics",
+                                                            "name": "Combat Cybernetic Implants",
+                                                            "desc": "Military grade combat implants to improve performance.",
+                                                            "cost": 2500,
+                                                            "tier": 5,
+                                                            "requirement":[
+                                                                "Advanced Cybernetic Implants",
+                                                                "Night Vision Technology",
+                                                                "High Efficiency Parts"
+                                                            ],
+                                                            "children":[]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "area": "biology",
                                             "category": "",
                                             "name": "Improved Wound-Tending Surgery",
                                             "tier": 2,
@@ -220,6 +296,40 @@
                                             ]
                                         }                        
                                     ]
+                                },
+                                {
+                                    "area": "biology",
+                                    "name": "Genetic Engineering",
+                                    "desc": "We have the technology to make him.",
+                                    "cost": 2500,
+                                    "tier": 3,
+                                    "requirement":[
+                                        "Biological Technology"
+                                    ],
+                                    "children":[]
+                                },
+                                {
+                                    "area": "biology-engineering",
+                                    "name": "Cryostasis Technology",
+                                    "desc": "Smart freezing of objects to preserve them!",
+                                    "cost": 2000,
+                                    "tier": 3,
+                                    "requirement":[
+                                        "Biological Technology",
+                                        "Advanced Engineering"
+                                    ],
+                                    "children":[]
+                                },
+                                {
+                                    "area": "Cybernetics",
+                                    "name": "Subdermal Implants",
+                                    "desc": "Electronic implants buried beneath the skin.",
+                                    "cost": 2500,
+                                    "tier": 4,
+                                    "requirement":[
+                                        "Biological Technology"
+                                    ],
+                                    "children":[]
                                 }                                                                   
                             ]
                         },
@@ -236,6 +346,90 @@
                             "cost": 2500,
                             "nanite": 0,
                             "children": [
+                                {
+                                    "area": "electronic",
+                                    "name": "Computer Consoles",
+                                    "desc": "Computers and how they work.",
+                                    "cost": 2000,
+                                    "tier": 1,
+                                    "requirement":[
+                                        "Data Theory"
+                                    ],
+                                    "children":[
+                                        {
+                                            "area": "electronic",
+                                            "name": "Computer Hardware",
+                                            "desc": "How computer hardware are made.",
+                                            "cost": 1000,
+                                            "tier": 1,
+                                            "requirement":[
+                                                "Computer Consoles"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "electronic",
+                                            "name": "Arcade Games",
+                                            "desc": "For the slackers on the station.",
+                                            "cost": 1000,
+                                            "tier": 1,
+                                            "requirement":[
+                                                "Computer Consoles"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "electronic",
+                                            "name": "Telecommunications Technology",
+                                            "desc": "Subspace transmission technology for near-instant communications devices.",
+                                            "cost": 2500,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Computer Consoles",
+                                                "Basic Bluespace Theory"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "electronic",
+                                            "name": "Computerized Recordkeeping",
+                                            "desc": "Organized record databases and how they're used.",
+                                            "cost": 1000,
+                                            "tier": 2,
+                                            "requirement":[
+                                                "Computer Consoles"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "electronic",
+                                                    "name": "Integrated HUDs",
+                                                    "desc": "The usefulness of computerized records, projected straight onto your eyepiece!",
+                                                    "cost": 1500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Computerized Recordkeeping",
+                                                        "Electromagnetic Theory"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "electronic",
+                                                            "name": "Night Vision Technology",
+                                                            "desc": "Allows seeing in the dark without actual light!",
+                                                            "cost": 5000,
+                                                            "tier": 3,
+                                                            "requirement":[
+                                                                "Integrated HUDs",
+                                                                "Advanced Engineering",
+                                                                "Advanced Electromagnetic Theory"
+                                                            ],
+                                                            "children":[]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
                                 {
                                     "area": "biology-data",
                                     "name": "Neural Programming",
@@ -326,7 +520,19 @@
                                         "Industrial Engineering"
                                     ],
                                     "cost": 2500,
-                                    "children": []
+                                    "children": [
+                                        {
+                                            "area": "service",
+                                            "name": "Advanced Sanitation Technology",
+                                            "desc": "Clean things better, faster, stronger, and harder!",
+                                            "cost": 2500,
+                                            "tier": 1,
+                                            "requirement":[
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        }
+                                    ]
                                 },
                                 {
                                     "area": "plasma",
@@ -348,6 +554,33 @@
                                             ],
                                             "cost": 2500,
                                             "children": []
+                                        },
+                                        {
+                                            "area": "mining",
+                                            "name": "Mining Technology",
+                                            "desc": "Better than Efficiency V.",
+                                            "cost": 2500,
+                                            "tier": 1,
+                                            "requirement":[
+                                                "Industrial Engineering",
+                                                "Basic Plasma Research"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "mining",
+                                                    "name": "Advanced Mining Technology",
+                                                    "desc": "Efficiency Level 127",
+                                                    "cost": 2500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Mining Technology",
+                                                        "Advanced Engineering",
+                                                        "Advanced Power Manipulation",
+                                                        "Advanced Plasma Research"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -523,6 +756,17 @@
                             ]
                         },
                         {
+                            "area": "clown",
+                            "name": "Clown Technology",
+                            "desc": "Honk?!",
+                            "cost": 2500,
+                            "tier": 2,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
+                            "children":[]
+                        },
+                        {
                             "area": "robotics",
                             "name": "Basic Robotics Research",
                             "tier": 2,
@@ -534,6 +778,18 @@
                             "children": [
                                 {
                                     "area": "robotics",
+                                    "name": "Artificial Intelligence",
+                                    "desc": "AI unit research",
+                                    "cost": 2500,
+                                    "tier": 3,
+                                    "requirement":[
+                                        "Basic Robotics Research",
+                                        "Positronic Brain"
+                                    ],
+                                    "children":[]
+                                },
+                                {
+                                    "area": "robotics",
                                     "name": "Advanced Robotics Research",
                                     "requirement":[
                                         "Basic Robotics Research"
@@ -541,10 +797,67 @@
                                     "tier": 3,
                                     "desc": "It can even do the dishes!",
                                     "cost": 2500,
-                                    "children": []
+                                    "children": [
+                                        {
+                                            "area": "robotics",
+                                            "name": "Cyborg Upgrades: Utility",
+                                            "desc": "Utility upgrades for cyborgs.",
+                                            "cost": 2000,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Industrial Engineering"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "Cyborg Upgrades: Service",
+                                                    "desc": "Allows service borgs to specialize with various modules.",
+                                                    "cost": 1500,
+                                                    "tier": 3,
+                                                    "requirement":[],
+                                                    "children":[]
+                                                }                
+                                            ]
+                                        },
+                                        {
+                                            "area": "robotics",
+                                            "name": "Cyborg Upgrades: Medical",
+                                            "desc": "Medical upgrades for cyborgs.",
+                                            "cost": 2000,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Advanced Biotechnology"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "robotics",
+                                            "name": "Cyborg Upgrades: Combat",
+                                            "desc": "Military grade upgrades for cyborgs.",
+                                            "cost": 5000,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Advanced Robotics Research",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "robotics",
+                                            "name": "Cyborg Upgrades: Security",
+                                            "desc": "Military grade upgrades for cyborgs.",
+                                            "cost": 5000,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Advanced Robotics Research",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        }
+                                    ]
                                 }
                             ]
-                        }     
+                        }
                     ]
                 },
                 {

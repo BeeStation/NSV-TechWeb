@@ -180,6 +180,26 @@ p.node-name {
   background: linear-gradient(90deg, rgb(52,87,213) 50%, goldenrod 50%);
 }
 
+.web.biology-engineering p.node-name {
+  background: linear-gradient(90deg, green 50%, goldenrod 50%);
+}
+
+.web.clown p.node-name {
+  background-color: yellow;
+}
+
+.web.service p.node-name {
+  background-color: lightgreen;
+}
+
+.web.Cybernetics p.node-name {
+  background: linear-gradient(90deg, violet 50%, green 50%);
+}
+
+.web.mining p.node-name {
+  background-color: rgb(119, 51, 51);
+}
+
 .web.robotics p.node-name {
   background-color: violet;
 }
