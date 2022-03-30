@@ -125,18 +125,6 @@ p.node-name {
 }
 
 /*Section connected to various Tech categories on the Tree*/
-.web.requirement {
-  padding-bottom: 0px;
-}
-
-.web.requirement p.node-name {
-  background-color: magenta;
-}
-
-#required {
-  padding-bottom: 0px;
-}
-
 .web.biology p.node-name {
   background-color: green;
 }
@@ -222,10 +210,6 @@ p.node-name {
 
 .web.robotics p.node-name {
   background-color: violet;
-}
-
-.web li.addonlist {
-  background-color: purple;
 }
 
 div[selected="selected"] {
