@@ -216,6 +216,10 @@ p.node-name {
   background-color: darkred;
 }
 
+.web.munitions p.node-name {
+  background-color: orange;
+}
+
 .web.robotics p.node-name {
   background-color: violet;
 }

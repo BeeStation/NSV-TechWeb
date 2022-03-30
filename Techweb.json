@@ -951,7 +951,19 @@
                                             "requirement":[
                                                 "Advanced Engineering"
                                             ],
-                                            "children":[]
+                                            "children":[
+                                                {
+                                                    "area": "service",
+                                                    "name": "Advanced Lamp Construction",
+                                                    "desc": "No more wasting time making lamps!",
+                                                    "cost": 1000,
+                                                    "tier": 0,
+                                                    "requirement":[
+                                                        "Advanced Sanitation Technology"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
                                         },
                                         {
                                             "area": "service",
@@ -1349,63 +1361,6 @@
                                                 },
                                                 {
                                                     "area": "robotics",
-                                                    "name": "Medical Exosuit Equipment",
-                                                    "desc": "Tools for high level mech suits",
-                                                    "cost": 2500,
-                                                    "tier": 3,
-                                                    "requirement":[
-                                                        "Advanced Biotechnology"
-                                                    ],
-                                                    "children":[]
-                                                },
-                                                {
-                                                    "area": "robotics",
-                                                    "name": "Simple Exosuit Modules",
-                                                    "desc": "An advanced piece of mech weaponry",
-                                                    "cost": 2500,
-                                                    "tier": 3,
-                                                    "requirement":[
-                                                        "Advanced Exosuits",
-                                                        "Bluespace Power Technology"
-                                                    ],
-                                                    "children":[
-                                                        {
-                                                            "area": "robotics",
-                                                            "name": "Exosuit Module (Teleporter Module)",
-                                                            "desc": "An advanced piece of mech Equipment",
-                                                            "cost": 2500,
-                                                            "tier": 4,
-                                                            "requirement":[
-                                                                "Miniaturized Bluespace Research"
-                                                            ],
-                                                            "children":[]
-                                                        },
-                                                        {
-                                                            "area": "robotics",
-                                                            "name": "Exosuit Module (Localized Wormhole Generator)",
-                                                            "desc": "An advanced piece of mech weaponry",
-                                                            "cost": 2500,
-                                                            "tier": 4,
-                                                            "requirement":[
-                                                                "Bluespace Travel"
-                                                            ],
-                                                            "children":[]
-                                                        },
-                                                        {
-                                                            "area": "robotics",
-                                                            "name": "Exosuit Diamond Drill",
-                                                            "desc": "A diamond drill fit for a large exosuit",
-                                                            "cost": 2500,
-                                                            "tier": 3,
-                                                            "requirement":[
-                                                                "Advanced Mining Technology"
-                                                            ],
-                                                            "children":[]
-                                                        }                
-                                                    ]
-                                                },
-                                                {
-                                                    "area": "robotics",
                                                     "name": "Advanced Exosuit Equipment",
                                                     "desc": "Tools for high level mech suits",
                                                     "cost": 2500,
@@ -1414,6 +1369,63 @@
                                                         "Advanced Exosuits"
                                                     ],
                                                     "children":[
+                                                        {
+                                                            "area": "robotics",
+                                                            "name": "Medical Exosuit Equipment",
+                                                            "desc": "Tools for high level mech suits",
+                                                            "cost": 2500,
+                                                            "tier": 3,
+                                                            "requirement":[
+                                                                "Advanced Biotechnology"
+                                                            ],
+                                                            "children":[]
+                                                        },
+                                                        {
+                                                            "area": "robotics",
+                                                            "name": "Simple Exosuit Modules",
+                                                            "desc": "An advanced piece of mech weaponry",
+                                                            "cost": 2500,
+                                                            "tier": 3,
+                                                            "requirement":[
+                                                                "Advanced Exosuits",
+                                                                "Bluespace Power Technology"
+                                                            ],
+                                                            "children":[
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Module (Teleporter Module)",
+                                                                    "desc": "An advanced piece of mech Equipment",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Miniaturized Bluespace Research"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Module (Localized Wormhole Generator)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Bluespace Travel"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Diamond Drill",
+                                                                    "desc": "A diamond drill fit for a large exosuit",
+                                                                    "cost": 2500,
+                                                                    "tier": 3,
+                                                                    "requirement":[
+                                                                        "Advanced Mining Technology"
+                                                                    ],
+                                                                    "children":[]
+                                                                }                
+                                                            ]
+                                                        },        
                                                         {
                                                             "area": "military",
                                                             "name": "Laser Dakka",
@@ -1584,6 +1596,286 @@
                     "cost": 0,
                     "nanite": 0,
                     "children": []
+                },
+                {
+                    "area": "munitions",
+                    "name": "NSV Tree",
+                    "desc": "That tree made for using Dakka",
+                    "cost": 0,
+                    "tier": 0,
+                    "children":[
+                        {
+                            "area": "munitions",
+                            "name": "Experimental Shield Technology",
+                            "desc": "Highly experimental shield technology to vastly increase survivability in ships. Although Nanotrasen researchers have had access to this technology for quite some time, the incredible amount of power required to maintain shields has proven to be the greatest challenge in implementing them.",
+                            "cost": 1000,
+                            "tier": 0,
+                            "requirement":[],
+                            "children":[]
+                        },
+                        {
+                            "area": "munitions",
+                            "name": "Ship computer circuitry",
+                            "desc": "Allows you to rebuild the CIC when it inevitably gets bombed.",
+                            "cost": 2000,
+                            "tier": 0,
+                            "requirement":[
+                                "Computer Consoles"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "munitions",
+                            "name": "Munitions computer circuitry",
+                            "desc": "Allows you to rebuild Munitions computers after they suffer from gunpowder overdose.",
+                            "cost": 2000,
+                            "tier": 0,
+                            "requirement":[
+                                "Computer Consoles"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "munitions",
+                            "name": "Guided Munitions I",
+                            "desc": "Parts to construct basic explosive, guided ordnance.",
+                            "cost": 1500,
+                            "tier": 0,
+                            "requirement":[
+                                "Explosive & Pyrotechnical Weaponry"
+                            ],
+                            "children":[
+                                {
+                                    "area": "munitions",
+                                    "name": "Automated Missile Construction",
+                                    "desc": "Machines and tools to automate missile construction.",
+                                    "cost": 2500,
+                                    "tier": 0,
+                                    "requirement":[
+                                        "Explosive & Pyrotechnical Weaponry"
+                                    ],
+                                    "children":[]
+                                },        
+                                {
+                                    "area": "munitions",
+                                    "name": "Guided Munitions II",
+                                    "desc": "More advanced torpedo components",
+                                    "cost": 5000,
+                                    "tier": 0,
+                                    "requirement":[
+                                        "Guided Munitions I",
+                                        "Exotic Ammunition"
+                                    ],
+                                    "children":[]
+                                }        
+                            ]
+                        },
+                        {
+                            "area": "munitions",
+                            "name": "Advanced Ballistics",
+                            "desc": "More guns means better guns... Right?",
+                            "cost": 5000,
+                            "tier": 0,
+                            "requirement":[
+                                "Ballistic Weaponry"
+                            ],
+                            "children":[
+                                {
+                                    "area": "munitions",
+                                    "name": "Macro-Ballistics",
+                                    "desc": "Asking important questions, like what if we made even bigger guns?",
+                                    "cost": 7500,
+                                    "tier": 0,
+                                    "requirement":[
+                                        "Advanced Ballistics",
+                                        "Advanced Plasma Research"
+                                    ],
+                                    "children":[]
+                                }        
+                            ]
+                        },
+                        {
+                            "area": "munitions",
+                            "name": "Fighter Construction",
+                            "desc": "Research into aircraft frames and how they can be turned into aircraft.",
+                            "cost": 1000,
+                            "tier": 0,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
+                            "children":[
+                                {
+                                    "area": "munitions",
+                                    "name": "Standard Fighter Parts",
+                                    "desc": "Research into the components that make up an aircraft and what makes them tick. Required for the construction of basic fighters.",
+                                    "cost": 2000,
+                                    "tier": 0,
+                                    "requirement":[
+                                        "Fighter Construction"
+                                    ],
+                                    "children":[
+                                        {
+                                            "area": "munitions",
+                                            "name": "Countermeasure Charge Fabrication",
+                                            "desc": "Instructional information on how to correctly wrap countermeasures.",
+                                            "cost": 1500,
+                                            "tier": 0,
+                                            "requirement":[
+                                                "Standard Fighter Parts"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "munitions",
+                                            "name": "Advanced Fighter Parts",
+                                            "desc": "Production of non-standard, upgraded fighter parts to upgrade the ship's fighter complement.",
+                                            "cost": 5000,
+                                            "tier": 0,
+                                            "requirement":[
+                                                "Standard Fighter Parts",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "munitions",
+                                                    "name": "Experimental Fighter Parts",
+                                                    "desc": "Research into highly theoretical fighter parts which, if constructed, could guarantee air superiority.",
+                                                    "cost": 7500,
+                                                    "tier": 0,
+                                                    "requirement":[
+                                                        "Advanced Fighter Parts",
+                                                        "Bluespace Travel",
+                                                        "Bluespace Power Technology"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "area": "munitions",
+                                            "name": "Standard Fighter Weapons",
+                                            "desc": "Production of standard fighter-based armaments.",
+                                            "cost": 2000,
+                                            "tier": 0,
+                                            "requirement":[
+                                                "Standard Fighter Parts",
+                                                "Weapon Development Technology"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "munitions",
+                                                    "name": "Advanced Fighter Weapons",
+                                                    "desc": "Research into advanced ballistic fighter weapons.",
+                                                    "cost": 5000,
+                                                    "tier": 2500,
+                                                    "requirement":[
+                                                        "Standard Fighter Weapons",
+                                                        "Ballistic Weaponry"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "munitions",
+                                                            "name": "Experimental Fighter Weapons",
+                                                            "desc": "Researching of cutting edge missile launching equipment",
+                                                            "cost": 5000,
+                                                            "tier": 0,
+                                                            "requirement":[
+                                                                "Advanced Fighter Weapons",
+                                                                "Advanced Weapon Development Technology"
+                                                            ],
+                                                            "children":[]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }                
+                                    ]
+                                }        
+                            ]
+                        },
+                        {
+                            "area": "munitions",
+                            "name": "Quantum slipstream technology",
+                            "desc": "Cutting edge upgrades for the FTL drive computer, allowing for more efficient FTL travel.",
+                            "wormhole": 5000,
+                            "tier": 0,
+                            "requirement":[
+                                "Computer Consoles"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "mining",
+                            "name": "Polytrinic asteroid mining equipment",
+                            "desc": "Upgrades for the mining ship's asteroid arrestor and dradis console, allowing it to detect and lock on to more specific mineral compositions in asteroid cores.",
+                            "cost": 7500,
+                            "tier": 0,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
+                            "children":[
+                                {
+                                    "area": "mining",
+                                    "name": "Phasic asteroid mining equipment",
+                                    "desc": "Advanced arrestor and dradis console upgrade for the mining ship, allowing it to handle any asteroid with a mineral composition at it's core.",
+                                    "cost": 12500,
+                                    "tier": 0,
+                                    "requirement":[
+                                        "Polytrinic asteroid mining equipment"
+                                    ],
+                                    "children":[]
+                                }
+                            ]
+                        },
+                        {
+                            "area": "engineering",
+                            "name": "Stormdrive Reactor Control Rod Fabrication",
+                            "desc": "Onboard fabrication of reactor control rods for the stormdrive. They'll do in a pinch.",
+                            "cost": 2500,
+                            "tier": 0,
+                            "requirement":[
+                                "Industrial Engineering"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "engineering",
+                            "name": "Seegson RBMK RCC",
+                            "desc": "Seegson's latest and greatest (within your budget range) reactor control design!",
+                            "cost": 2500,
+                            "tier": 0,
+                            "requirement":[
+                                "Advanced Engineering",
+                                "Advanced Power Manipulation"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "engineering",
+                            "name": "Magnetic Constriction of Plasma",
+                            "desc": "Beating plasma into submission - a guide.",
+                            "cost": 2500,
+                            "tier": 0,
+                            "requirement":[
+                                "Advanced Engineering",
+                                "Advanced Power Manipulation"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "engineering",
+                            "name": "Inertial Dampeners",
+                            "desc": "Anti-shake technology for hull vibrations.",
+                            "cost": 10000,
+                            "tier": 0,
+                            "requirement":[
+                                "Applied Bluespace Research",
+                                "High Efficiency Parts",
+                                "Advanced Power Manipulation"
+                            ],
+                            "children":[]
+                        }
+                    ]
                 }
             ]
         }
