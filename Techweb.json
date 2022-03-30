@@ -223,6 +223,17 @@
                                                     "children":[
                                                         {
                                                             "area": "Cybernetics",
+                                                            "name": "Advanced Combat Cybernetic Implants",
+                                                            "desc": "Experimental military cybernetic weapons",
+                                                            "cost": 10000,
+                                                            "tier": 5,
+                                                            "requirement":[
+                                                                "Advanced Cybernetic Implants",
+                                                                "Illegal Technology"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "area": "Cybernetics",
                                                             "name": "Combat Cybernetic Implants",
                                                             "desc": "Military grade combat implants to improve performance.",
                                                             "cost": 2500,
@@ -230,7 +241,8 @@
                                                             "requirement":[
                                                                 "Advanced Cybernetic Implants",
                                                                 "Night Vision Technology",
-                                                                "High Efficiency Parts"
+                                                                "High Efficiency Parts",
+                                                                "Weapon Development Technology"
                                                             ],
                                                             "children":[]
                                                         }
@@ -453,6 +465,176 @@
                                             "children":[]
                                         }
                                     ]
+                                },
+                                {
+                                    "area": "electronic",
+                                    "name": "Basic Nanite Programming",
+                                    "desc": "The basics of nanite construction and programming.",
+                                    "cost": 1000,
+                                    "tier": 2,
+                                    "requirement":[
+                                        "Data Theory"
+                                    ],
+                                    "children":[
+                                        {
+                                            "area": "electronic",
+                                            "name": "Smart Nanite Programming",
+                                            "desc": "Nanite programs that require nanites to perform complex actions, act independently, roam or seek targets.",
+                                            "cost": 500,
+                                            "nanite": 500,
+                                            "tier": 2,
+                                            "requirement":[
+                                                "Basic Nanite Programming",
+                                                "Basic Robotics Research"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "electronic",
+                                            "name": "Mesh Nanite Programming",
+                                            "desc": "Nanite programs that require static structures and membranes.",
+                                            "cost": 500,
+                                            "nanite": 500,
+                                            "tier": 2,
+                                            "requirement":[
+                                                "Basic Nanite Programming",
+                                                "Industrial Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "electronic",
+                                            "name": "Biological Nanite Programming",
+                                            "desc": "Nanite programs that require complex biological interaction.",
+                                            "cost": 500,
+                                            "nanite": 500,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Basic Nanite Programming",
+                                                "Biological Technology"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "electronic",
+                                                    "name": "Harmonic Nanite Programming",
+                                                    "desc": "Nanite programs that require seamless integration between nanites and biology.",
+                                                    "cost": 2000,
+                                                    "nanite": 2000,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Biological Nanite Programming",
+                                                        "Smart Nanite Programming",
+                                                        "Mesh Nanite Programming"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "electronic",
+                                                            "name": "Military Nanite Programming",
+                                                            "desc": "Nanite programs that perform military-grade functions.",
+                                                            "cost": 2500,
+                                                            "nanite": 2500,
+                                                            "tier": 5,
+                                                            "requirement":[
+                                                                "Harmonic Nanite Programming",
+                                                                "Illegal Technology"
+                                                            ],
+                                                            "children":[]
+                                                        },
+                                                        {
+                                                            "area": "electronic",
+                                                            "name": "Hazard Nanite Programs",
+                                                            "desc": "Extremely advanced Nanite programs with the potential of being extremely dangerous.",
+                                                            "cost": 3000,
+                                                            "nanite": 4000,
+                                                            "tier": 5,
+                                                            "requirement":[
+                                                                "Harmonic Nanite Programming",
+                                                                "Alien Technology"
+                                                            ],
+                                                            "children":[]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "area": "electronic",
+                                                    "name": "Neural Nanite Programming",
+                                                    "desc": "Nanite programs affecting nerves and brain matter.",
+                                                    "cost": 1000,
+                                                    "nanite": 1000,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Biological Nanite Programming"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "electronic",
+                                                            "name": "Synaptic Nanite Programming",
+                                                            "desc": "Nanite programs affecting mind and thoughts.",
+                                                            "cost": 1000,
+                                                            "nanite": 1000,
+                                                            "tier": 4,
+                                                            "requirement":[
+                                                                "Neural Nanite Programming",
+                                                                "Neural Programming"
+                                                            ],
+                                                            "children":[]
+                                                        }                                
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "area": "security",
+                            "name": "Basic Security Equipment",
+                            "desc": "Standard equipment used by security.",
+                            "cost": 1000,
+                            "tier": 1,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
+                            "children":[
+                                {
+                                    "area": "security",
+                                    "name": "Nonlethal Landmine Technology",
+                                    "desc": "Our weapons technicians could perhaps work out methods for the creation of nonlethal landmines for security teams.",
+                                    "cost": 1000,
+                                    "tier": 3,
+                                    "requirement":[
+                                        "Basic Security Equipment"
+                                    ],
+                                    "children":[
+                                        {
+                                            "area": "security",
+                                            "name": "Smart Landmine Technology",
+                                            "desc": "Using IFF technology, we could develop smartmines that do not trigger for those who are mindshielded.",
+                                            "cost": 2500,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Weapon Development Technology",
+                                                "Nonlethal Landmine Technology",
+                                                "Industrial Engineering"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "security",
+                                                    "name": "Advanced Landmine Technology",
+                                                    "desc": "We can further develop our smartmines to build some extremely capable designs.",
+                                                    "cost": 2500,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Smart Landmine Technology",
+                                                        "Weapon Development Technology",
+                                                        "Advanced Engineering"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -495,7 +677,6 @@
                                 },
                                 {
                                     "area": "alien",
-                                    "category": "",
                                     "name": "Alien Technology",
                                     "key": "Alien_Technology",
                                     "tier": 5,
@@ -506,7 +687,212 @@
                                         "Industrial Engineering"
                                     ],
                                     "cost": 5000,
-                                    "nanite": 0
+                                    "children":[
+                                        {
+                                            "area": "alien",
+                                            "name": "Alien Biological Tools",
+                                            "desc": "Advanced biological tools.",
+                                            "cost": 2500,
+                                            "tier": 5,
+                                            "requirement":[
+                                                "Alien Technology",
+                                                "Advanced Biotechnology"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "alien",
+                                            "name": "Alien Engineering",
+                                            "desc": "Alien engineering tools.",
+                                            "cost": 2500,
+                                            "tier": 5,
+                                            "requirement":[
+                                                "Alien Technology",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "area": "military",
+                                    "name": "Weapon Development Technology",
+                                    "desc": "Our researchers have found new ways to weaponize just about everything now.",
+                                    "cost": 10000,
+                                    "tier": 3,
+                                    "requirement":[
+                                        "Industrial Engineering"
+                                    ],
+                                    "children":[
+                                        {
+                                            "area": "military",
+                                            "name": "Electric Weapons",
+                                            "desc": "Weapons using electric technology",
+                                            "cost": 2500,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Weapon Development Technology",
+                                                "Advanced Power Manipulation",
+                                                "Electromagnetic Theory"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "bio-mili",
+                                            "name": "Medical Weaponry",
+                                            "desc": "Weapons using medical technology.",
+                                            "cost": 2500,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Weapon Development Technology",
+                                                "Advanced Biotechnology"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "military",
+                                            "name": "Ballistic Weaponry",
+                                            "desc": "This isn't research.. This is reverse-engineering!",
+                                            "cost": 2500,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Weapon Development Technology"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "military",
+                                            "name": "Advanced Weapon Development Technology",
+                                            "desc": "Our weapons are breaking the rules of reality by now.",
+                                            "cost": 10000,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Weapon Development Technology",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "syndicate",
+                                                    "name": "Illegal Technology",
+                                                    "desc": "Dangerous research used to create dangerous objects.",
+                                                    "cost": 10000,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Advanced Engineering",
+                                                        "Advanced Weapon Development Technology",
+                                                        "Explosive & Pyrotechnical Weaponry"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "syndicate",
+                                                            "name": "Unregulated Bluespace Research",
+                                                            "desc": "Bluespace technology using unstable or unbalanced procedures, prone to damaging the fabric of bluespace. Outlawed by galactic conventions.",
+                                                            "cost": 2500,
+                                                            "tier": 5,
+                                                            "requirement":[
+                                                                "Illegal Technology",
+                                                                "Bluespace Travel"
+                                                            ],
+                                                            "children":[]
+                                                        },
+                                                        {
+                                                            "area": "syndicate",
+                                                            "name": "Basic Sticky Technology",
+                                                            "desc": "The only thing left to do after researching this tech is to start printing out a bunch of 'kick me' signs.",
+                                                            "cost": 2500,
+                                                            "tier": 3,
+                                                            "requirement":[
+                                                                "Illegal Technology",
+                                                                "Advanced Engineering"
+                                                            ],
+                                                            "children":[
+                                                                {
+                                                                    "area": "syndicate",
+                                                                    "name": "Advanced Sticky Technology",
+                                                                    "desc": "Taking a good joke too far? Nonsense!",
+                                                                    "cost": 5000,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Basic Sticky Technology"
+                                                                    ],
+                                                                    "children":[]        
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "area": "military",
+                                                    "name": "Exotic Ammunition",
+                                                    "desc": "They won't know what hit em.",
+                                                    "cost": 2500,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Medical Weaponry",
+                                                        "Advanced Weapon Development Technology"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "military",
+                                                    "name": "Explosive & Pyrotechnical Weaponry",
+                                                    "desc": "If the light stuff just won't do it.",
+                                                    "cost": 2500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Advanced Weapon Development Technology"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "military",
+                                                    "name": "Radioactive Weaponry",
+                                                    "desc": "Weapons using radioactive technology.",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Advanced Weapon Development Technology",
+                                                        "Advanced Engineering"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "military",
+                                                    "name": "One-point Bluespace-gravitational Manipulator",
+                                                    "desc": "Fancy wording for gravity gun.",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Advanced Weapon Development Technology",
+                                                        "Bluespace Travel"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "military",
+                                                    "name": "Beam Weaponry",
+                                                    "desc": "Various basic beam weapons",
+                                                    "cost": 2500,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Advanced Weapon Development Technology"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "military",
+                                                    "name": "Advanced Beam Weaponry",
+                                                    "desc": "Various advanced beam weapons",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Advanced Weapon Development Technology"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {              
 
@@ -522,6 +908,41 @@
                                     "cost": 2500,
                                     "children": [
                                         {
+                                            "area": "engineering",
+                                            "name": "RCD designs upgrade",
+                                            "desc": "Unlocks new RCD designs.",
+                                            "cost": 2500,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[
+                                                {
+                                                    "area": "engineering",
+                                                    "name": "Advanced RCD designs upgrade",
+                                                    "desc": "Unlocks new RCD designs.",
+                                                    "cost": 5000,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "RCD designs upgrade",
+                                                        "Bluespace Travel"
+                                                    ],
+                                                    "children":[]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "area": "engineering",
+                                            "name": "Experimental Tools",
+                                            "desc": "Highly advanced tools.",
+                                            "cost": 2500,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
                                             "area": "service",
                                             "name": "Advanced Sanitation Technology",
                                             "desc": "Clean things better, faster, stronger, and harder!",
@@ -529,6 +950,18 @@
                                             "tier": 1,
                                             "requirement":[
                                                 "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "service",
+                                            "name": "Botanical Engineering",
+                                            "desc": "Botanical tools",
+                                            "cost": 2500,
+                                            "tier": 1,
+                                            "requirement":[
+                                                "Advanced Engineering",
+                                                "Biological Technology"
                                             ],
                                             "children":[]
                                         }
@@ -768,6 +1201,17 @@
                         },
                         {
                             "area": "robotics",
+                            "name": "EXOSUIT: Odysseus",
+                            "desc": "Odysseus exosuit designs",
+                            "cost": 2500,
+                            "tier": 3,
+                            "requirement":[
+                                "Basic Research Technology"
+                            ],
+                            "children":[]
+                        },
+                        {
+                            "area": "robotics",
                             "name": "Basic Robotics Research",
                             "tier": 2,
                             "desc": "Programmable machines that make our lives lazier.",
@@ -800,6 +1244,43 @@
                                     "children": [
                                         {
                                             "area": "robotics",
+                                            "name": "Cyborg Upgrades: Medical",
+                                            "desc": "Medical upgrades for cyborgs.",
+                                            "cost": 2000,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Advanced Biotechnology"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "robotics",
+                                            "name": "Cyborg Upgrades: Combat",
+                                            "desc": "Military grade upgrades for cyborgs.",
+                                            "cost": 5000,
+                                            "tier": 3,
+                                            "requirement":[
+                                                "Advanced Robotics Research",
+                                                "Weapon Development Technology",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "robotics",
+                                            "name": "Cyborg Upgrades: Security",
+                                            "desc": "Military grade upgrades for cyborgs.",
+                                            "cost": 5000,
+                                            "tier": 4,
+                                            "requirement":[
+                                                "Advanced Robotics Research",
+                                                "Weapon Development Technology",
+                                                "Advanced Engineering"
+                                            ],
+                                            "children":[]
+                                        },
+                                        {
+                                            "area": "robotics",
                                             "name": "Cyborg Upgrades: Utility",
                                             "desc": "Utility upgrades for cyborgs.",
                                             "cost": 2000,
@@ -821,38 +1302,260 @@
                                         },
                                         {
                                             "area": "robotics",
-                                            "name": "Cyborg Upgrades: Medical",
-                                            "desc": "Medical upgrades for cyborgs.",
-                                            "cost": 2000,
+                                            "name": "Advanced Exosuits",
+                                            "desc": "For when you just aren't Gundam enough.",
+                                            "cost": 2500,
                                             "tier": 3,
                                             "requirement":[
-                                                "Advanced Biotechnology"
+                                                "Advanced Robotics Research"
                                             ],
-                                            "children":[]
-                                        },
-                                        {
-                                            "area": "robotics",
-                                            "name": "Cyborg Upgrades: Combat",
-                                            "desc": "Military grade upgrades for cyborgs.",
-                                            "cost": 5000,
-                                            "tier": 3,
-                                            "requirement":[
-                                                "Advanced Robotics Research",
-                                                "Advanced Engineering"
-                                            ],
-                                            "children":[]
-                                        },
-                                        {
-                                            "area": "robotics",
-                                            "name": "Cyborg Upgrades: Security",
-                                            "desc": "Military grade upgrades for cyborgs.",
-                                            "cost": 5000,
-                                            "tier": 4,
-                                            "requirement":[
-                                                "Advanced Robotics Research",
-                                                "Advanced Engineering"
-                                            ],
-                                            "children":[]
+                                            "children":[
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "EXOSUIT: Gygax",
+                                                    "desc": "Gygax exosuit designs",
+                                                    "cost": 2500,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Advanced Exosuits",
+                                                        "Weapon Development Technology"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "EXOSUIT: Durand",
+                                                    "desc": "Durand exosuit designs",
+                                                    "cost": 2500,
+                                                    "tier": 4,
+                                                    "requirement":[
+                                                        "Advanced Exosuits",
+                                                        "Advanced Weapon Development Technology"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "EXOSUIT: Phazon",
+                                                    "desc": "Phazon exosuit designs",
+                                                    "cost": 2500,
+                                                    "tier": 5,
+                                                    "requirement":[
+                                                        "Advanced Exosuits",
+                                                        "Weapon Development Technology",
+                                                        "Miniaturized Bluespace Research"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "Medical Exosuit Equipment",
+                                                    "desc": "Tools for high level mech suits",
+                                                    "cost": 2500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Advanced Biotechnology"
+                                                    ],
+                                                    "children":[]
+                                                },
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "Simple Exosuit Modules",
+                                                    "desc": "An advanced piece of mech weaponry",
+                                                    "cost": 2500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Advanced Exosuits",
+                                                        "Bluespace Power Technology"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "robotics",
+                                                            "name": "Exosuit Module (Teleporter Module)",
+                                                            "desc": "An advanced piece of mech Equipment",
+                                                            "cost": 2500,
+                                                            "tier": 4,
+                                                            "requirement":[
+                                                                "Miniaturized Bluespace Research"
+                                                            ],
+                                                            "children":[]
+                                                        },
+                                                        {
+                                                            "area": "robotics",
+                                                            "name": "Exosuit Module (Localized Wormhole Generator)",
+                                                            "desc": "An advanced piece of mech weaponry",
+                                                            "cost": 2500,
+                                                            "tier": 4,
+                                                            "requirement":[
+                                                                "Bluespace Travel"
+                                                            ],
+                                                            "children":[]
+                                                        },
+                                                        {
+                                                            "area": "robotics",
+                                                            "name": "Exosuit Diamond Drill",
+                                                            "desc": "A diamond drill fit for a large exosuit",
+                                                            "cost": 2500,
+                                                            "tier": 3,
+                                                            "requirement":[
+                                                                "Advanced Mining Technology"
+                                                            ],
+                                                            "children":[]
+                                                        }                
+                                                    ]
+                                                },
+                                                {
+                                                    "area": "robotics",
+                                                    "name": "Advanced Exosuit Equipment",
+                                                    "desc": "Tools for high level mech suits",
+                                                    "cost": 2500,
+                                                    "tier": 3,
+                                                    "requirement":[
+                                                        "Advanced Exosuits"
+                                                    ],
+                                                    "children":[
+                                                        {
+                                                            "area": "military",
+                                                            "name": "Laser Dakka",
+                                                            "desc": "Pretty colored Dakka",
+                                                            "cost": 0,
+                                                            "tier": 0,
+                                                            "children":[
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (MKIV Ion Heavy Cannon)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Electric Weapons",
+                                                                        "Advanced Electromagnetic Theory"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (MKI Tesla Cannon)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Electric Weapons",
+                                                                        "Advanced Power Manipulation"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (CH-PS \"Immolator\" Laser)",
+                                                                    "desc": "A basic piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Beam Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (CH-LC \"Solaris\" Laser Cannon)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Advanced Beam Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (CH-DS \"Peacemaker\" Mounted Disabler)",
+                                                                    "desc": "A basic piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Beam Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                }        
+                                                            ]
+                                                        },
+                                                        {
+                                                            "area": "military",
+                                                            "name": "Ballistic Dakka",
+                                                            "desc": "Dakka",
+                                                            "cost": 0,
+                                                            "tier": 0,
+                                                            "children":[
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (LBX AC 10 \"Scattershot\")",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Ballistic Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (FNX-99 \"Hades\" Carbine)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Ballistic Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (\"Ultra AC 2\" LMG)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Ballistic Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                }        
+                                                            ]
+                                                        },
+                                                        {
+                                                            "area": "military",
+                                                            "name": "Boom Daka",
+                                                            "desc": "Loud and Good Dakka",
+                                                            "cost": 0,
+                                                            "tier": 0,
+                                                            "children":[
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Weapon (SGL-6 Grenade Launcher)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Explosive & Pyrotechnical Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                },
+                                                                {
+                                                                    "area": "robotics",
+                                                                    "name": "Exosuit Module (SOB-3 Clusterbang Launcher)",
+                                                                    "desc": "An advanced piece of mech weaponry",
+                                                                    "cost": 2500,
+                                                                    "tier": 4,
+                                                                    "requirement":[
+                                                                        "Explosive & Pyrotechnical Weaponry"
+                                                                    ],
+                                                                    "children":[]
+                                                                }        
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

@@ -200,6 +200,22 @@ p.node-name {
   background-color: rgb(119, 51, 51);
 }
 
+.web.security p.node-name {
+  background-color: Crimson;
+}
+
+.web.bio-mili p.node-name {
+  background: linear-gradient(90deg, #0099ff, #f7f7f7, green);
+}
+
+.web.military p.node-name {
+  background: linear-gradient(to right, #0099ff, #f7f7f7);
+}
+
+.web.syndicate p.node-name {
+  background-color: darkred;
+}
+
 .web.robotics p.node-name {
   background-color: violet;
 }

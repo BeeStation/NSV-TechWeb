@@ -6,7 +6,7 @@ var configWeb = {
     nodeAlign: 'TOP',
     hideRootNode: true,
     siblingSeparation: 20,
-    subTeeSeparation: 20,
+    subTeeSeparation: 30,
     scrollbar: 'resize',
     connectors: {
       type: 'step',
