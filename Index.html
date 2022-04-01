@@ -10,12 +10,10 @@
     <!-- javascript -->
     <script src="assets/vendor/Treant.js"></script>
     <script src="assets/vendor/raphael.js"></script>
-    <script src="assets/vendor/raphael.min.js"></script>
     <script src="assets/vendor/jquery.min.js"></script>
     <script src="assets/vendor/jsrender.min.js"></script>
     <script src="assets/vendor/lozad.min.js"></script>
     <script src="assets/js/RnD-tree.js"></script>
-    
     <script id="node-template" type="text/x-jsrender">
       <p class="node-name" title="{{:name}}">{{:name}}</p>
       {{if area == "requirement" || key == "required"}}
@@ -46,10 +44,28 @@
 
 </head>
 <body>
-  <div id="tree-simple" style="margin-top:50px">
+<ul class="float-container">
+  <li class="float-element">
+    <a href="https://github.com/Bobbanz1/NSV-TechWeb" class="float-content">
+      <h2>Github</h2>
+    </a>
+  </li>
+  <li class="float-element">
+    <a href="." class="float-content">
+      <h2>Fix Broken Tree</h2>
+    </a>
+  </li>
+  <li class="float-element">
+    <a href="https://nsv.beestation13.com" class="float-content">
+      <h2>NSV13</h2>
+    </a>
+  </li>
+</ul>
+<div id="tree-simple" style="margin-top:50px">
     <div id="Techweb">
 
     </div>
-  </div>
+</div>
+
 </body>
 </html>

@@ -216,6 +216,43 @@ div[selected="selected"] {
   background: #25466b;
 }
 
+/* Floating Navbar & Buttons */
+
+.float-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #555;
+  list-style-type: none;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  z-index: 100;
+  width: 100%;
+}
+
+.float-element {
+  display: block;
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #303030;
+}
+
+.float-content {
+  display: block;
+  font-family: 'Audiowide';
+  text-align: center;
+  line-height: normal;
+  color: #fff;
+  font-size: 11pt;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
 /* I don't know */
 div.fixed {
   position: fixed;
