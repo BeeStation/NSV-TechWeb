@@ -81,6 +81,7 @@ p.node-name {
   text-align: center;
   font-weight: bold;
   text-overflow: ellipsis;
+  padding-right: 1vw;
   overflow: hidden;
   white-space: break-spaces;
   z-index: 2;
