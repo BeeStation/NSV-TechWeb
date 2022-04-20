@@ -62,7 +62,7 @@ body {
   z-index: 2;
 }
 
-.web p.node-title:before {
+.web p.node-desc:after {
   content: '';
   position: absolute;
   bottom: 0; left: 0;
@@ -99,6 +99,7 @@ p.node-name {
 
 .web p.node-desc {
   text-align: center;
+  padding-left: 1vw;
   z-index: 3;
 }
 
