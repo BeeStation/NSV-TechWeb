@@ -14,6 +14,7 @@
     <script src="assets/vendor/jsrender.min.js"></script>
     <script src="assets/vendor/lozad.min.js"></script>
     <script src="assets/js/RnD-tree.js"></script>
+    <script src="assets/js/Zoom.js"></script>
     <script id="node-template" type="text/x-jsrender">
       <p class="node-name" title="{{:name}}">{{:name}}</p>
       {{if area == "requirement" || key == "required"}}
@@ -58,6 +59,21 @@
   <li class="float-element">
     <a href="https://nsv.beestation13.com" class="float-content">
       <h2>NSV13</h2>
+    </a>
+  </li>
+  <!--<li class="float-element">
+    <a id="zoom_in" class="float-content">
+      <h2>Zoom In</h2>
+    </a>
+  </li>-->
+  <li class="float-element">
+    <a id="zoom_out" class="float-content">
+      <h2>Zoom Out</h2>
+    </a>
+  </li>
+  <li class="float-element">
+    <a id="zoom_reset" class="float-content">
+      <h2>Zoom Reset</h2>
     </a>
   </li>
 </ul>
