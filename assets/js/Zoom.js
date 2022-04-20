@@ -9,7 +9,7 @@ jQuery(document).ready(function($)
 
     function zoom_page(step, trigger)
     {
-        if (zoom_level>=120 && step>0 || zoom_level<=80 && step<0)
+        if (zoom_level>=100 && step>0 || zoom_level<=75 && step<0)
         {
             return;
         } 
@@ -36,7 +36,7 @@ jQuery(document).ready(function($)
                 width: '100%' 
             });
         }
-        if(zoom_level>=120 || zoom_level<=80){
+        if(zoom_level>=100 || zoom_level<=80){
             trigger.addClass('disabled');
         } else {
             trigger.parents('ul').find('.disabled').removeClass('disabled');
