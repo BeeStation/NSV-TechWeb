@@ -166,6 +166,10 @@ p.node-name {
   background-color: rgb(52,87,213);
 }
 
+.web.bluespace-biology p.node-name {
+  background: linear-gradient(90deg, rgb(52,87,213) 50%, green 50%);
+}
+
 .web.bluespace-engineering p.node-name {
   background: linear-gradient(90deg, rgb(52,87,213) 50%, goldenrod 50%);
 }
